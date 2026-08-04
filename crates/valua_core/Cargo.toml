@@ -1,0 +1,11 @@
+[package]
+name = "valua_core"
+version = "0.1.0"
+edition = "2021"
+description = "ValuaRUST decision engine — pure Rust, no FFI, no Android dependencies"
+
+[dependencies]
+# No external dependencies — pure Rust standard library only
+
+[dev-dependencies]
+# No test dependencies needed

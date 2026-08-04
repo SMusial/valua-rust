@@ -1,0 +1,8 @@
+# .cargo/config.toml
+# Tells Cargo which linker to use when cross-compiling for Android ARM64.
+# cargo-ndk sets this automatically — you do NOT need to edit this file.
+# It is committed to the repo so the build is reproducible on any machine.
+
+[target.aarch64-linux-android]
+linker = "C:/Users/sylve/AppData/Local/Android/Sdk/ndk/30.0.15729638/toolchains/llvm/prebuilt/windows-x86_64/bin/aarch64-linux-android33-clang.cmd"
+ar = "C:/Users/sylve/AppData/Local/Android/Sdk/ndk/30.0.15729638/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar.exe"

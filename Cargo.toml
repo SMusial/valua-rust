@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["crates/valua_core", "crates/valua_edge"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Sylwester Musial <sylvester.musial@gmail.com>"]
+license = "UNLICENSED"
+repository = "https://github.com/your-org/valua-rust"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

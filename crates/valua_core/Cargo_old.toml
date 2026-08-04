@@ -1,0 +1,13 @@
+[package]
+name        = "valua_core"
+description = "Pure Rust decision engine — E[Z] formula and MCDA routing rules"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+
+[dependencies]
+# no external dependencies — pure Rust logic only
+
+[dev-dependencies]
+# no extra test dependencies needed

@@ -1,0 +1,11 @@
+// valua_edge.udl
+// UniFFI Interface Definition Language file.
+//
+// This file declares every type and function that Kotlin can see.
+// It is the "contract" between Rust and the Android world.
+// Full types are added in Step 3.  For now we expose only the
+// version string so the bridge can be tested end-to-end immediately.
+
+namespace valua_edge {
+    string engine_version();
+};
