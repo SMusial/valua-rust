@@ -31,7 +31,7 @@ E[Z] = E[V] × P(sale) − (C_listing + C_success + C_handling + C_shipping)
 Where:
   E[V]        = estimated market value (PLN)
   P(sale)     = historical sale probability per category
-  C_listing   = 1.00 EUR  (fixed per item)
+  C_listing   = 0.25 EUR  (fixed per item)
   C_success   = 3% of E[V]
   C_handling  = 3.00 EUR (default)
   C_shipping  = per category (3-12 EUR)
