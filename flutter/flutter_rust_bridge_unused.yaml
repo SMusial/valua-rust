@@ -1,0 +1,2 @@
+rust_crate_dir: ../crates/valua_edge/src/lib.rs
+dart_output: lib/src/rust/

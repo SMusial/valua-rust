@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/valua_core", "crates/valua_edge"]
+members = ["crates/valua_core", "crates/valua_edge", "flutter/valua_rust/rust"]
 
 [workspace.package]
 version = "0.1.0"

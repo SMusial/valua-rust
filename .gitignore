@@ -3,6 +3,6 @@
 *.d
 *.rlib
 *.rmeta
-*.Ds_Store
+.DS_Store
 jmiLabs/
 android/app/src/main.java/uniffi/

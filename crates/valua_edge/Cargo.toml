@@ -4,15 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib", "lib"]
-
-[[bin]]
-name = "uniffi-bindgen"
-path = "uniffi-bindgen.rs"
+crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
 valua_core = { path = "../valua_core" }
-uniffi = { version = "0.27", features = ["build", "cli"] }
+flutter_rust_bridge = "=2.12.0"
 
 [build-dependencies]
-uniffi = { version = "0.27", features = ["build"] }
+flutter_rust_bridge_codegen = "2"
