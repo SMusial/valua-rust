@@ -19,11 +19,11 @@ ValuaRUST enables a field agent to walk through a residential property and triag
 |---|---|
 | 🔴 **DISCARD** | Net profit E[Z] ≤ 0 — not worth the handling cost |
 | 🟡 **BUNDLE** | Low individual value — group with similar items |
-| 🟢 **SELL** | Route automatically to Allegro / Vinted / eBay |
+| 🟢 **SELL** | Route automatically to relevant retail |
 
 ---
 
-## The Decision Formula
+## Draft Decision Formula
 
 ```
 E[Z] = E[V] × P(sale) − (C_listing + C_success + C_handling + C_shipping)
@@ -31,10 +31,10 @@ E[Z] = E[V] × P(sale) − (C_listing + C_success + C_handling + C_shipping)
 Where:
   E[V]        = estimated market value (PLN)
   P(sale)     = historical sale probability per category
-  C_listing   = 1.00 PLN  (fixed per item)
-  C_success   = 1% of E[V]
-  C_handling  = 12.00 PLN (default)
-  C_shipping  = per category (12–50 PLN)
+  C_listing   = 1.00 EUR  (fixed per item)
+  C_success   = 3% of E[V]
+  C_handling  = 3.00 EUR (default)
+  C_shipping  = per category (3-12 EUR)
 ```
 
 ---
@@ -43,8 +43,8 @@ Where:
 
 | Fee | Amount | When |
 |---|---|---|
-| Listing fee | **1.00 PLN** | Per item listed |
-| Success fee | **1% of sale price** | Per item sold |
+| Listing fee | **0.25 EUR** | Per item listed |
+| Success fee | **3% of sale price** | Per item sold |
 
 ---
 
@@ -150,13 +150,13 @@ flutter run
 ║  [👕 Clothing] [🪑 Furniture]  ║
 ║  [📚 Books] [📱 Electronics]   ║
 ║                                ║
-║  Estimated value (PLN): [___]  ║
+║  Estimated value (EUR): [___]  ║
 ║                                ║
 ║       ⚡ Evaluate Item         ║
 ╠════════════════════════════════╣
-║  🟢 SELL on Allegro            ║
-║  Net profit E[Z]:   33 PLN     ║
-║  Your 1% fee:        1 PLN     ║
+║  🟢 SELL on eBay              ║
+║  Net profit E[Z]: 33.00 EUR    ║
+║  Your 3% fee:     0.99 EUR     ║
 ╠════════════════════════════════╣
 ║  Session: 1 / 10 items         ║
 ╚════════════════════════════════╝
@@ -181,8 +181,8 @@ flutter run
 | **Phase 1** | Manual triage — Flutter UI + Rust engine | ✅ Done |
 | **Phase 1.5** | Camera scanning — CameraX + ONNX YOLOv8 | 🔜 Next |
 | **Phase 2** | Cloud backend — Rust/Axum + Gemini VLM | 📋 Planned |
-| **Phase 3** | Retail integrations — Allegro + Vinted + OLX | 📋 Planned |
-| **Phase 4** | Billing — Stripe + 1 PLN/item + 1% success fee | 📋 Planned |
+| **Phase 3** | Retail integrations — minimum 3 global retailers | 📋 Planned |
+| **Phase 4** | Billing — Stripe + 1 EUR/item + 3% success fee | 📋 Planned |
 
 ---
 
