@@ -189,5 +189,5 @@ flutter run
 ## IP Notice
 
 This project and all associated ideas, architecture, and code were conceived and
-documented on **2026-07-22** by Sylwester Musial. All rights reserved.
+documented on **2026-07-22** by Sylwester Musiał. All rights reserved.
 This repository is private and shared for development purposes only.
